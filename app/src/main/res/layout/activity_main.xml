@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="@string/title_desc"
+        android:textAlignment="center"
+        android:textColor="#555555"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView_district"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_text"
+        android:layout_marginTop="30dp"
+        android:padding="6dp"
+        android:textSize="18sp"
+        android:text="@string/district"
+        android:textColor="#555555"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+
+    <Spinner
+        android:id="@+id/spinner_district"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textView_district"/>
+
+    <TextView
+        android:id="@+id/textView_thana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_district"
+        android:layout_marginTop="30dp"
+        android:padding="6dp"
+        android:textSize="18sp"
+        android:text="@string/thana"
+        android:textColor="#555555"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <Spinner
+        android:id="@+id/spinner_thana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_thana"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_thana"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="@string/submit"
+        android:textAlignment="center" />
+</RelativeLayout>

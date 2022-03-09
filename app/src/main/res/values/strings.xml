@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Spinner</string>
+    <string name="district">District*</string>
+    <string name="thana">Thana*</string>
+    <string name="submit">Submit</string>
+    <string name="title_desc">Learning Multiple Spinners (Populating Second Spinner based on the Selection of First Spinner)
+    </string>
+
+    <string-array name="array_district">
+        <item>Select Your district</item>
+        <item>Dhaka</item>
+        <item>Chandpur</item>
+        <item>Comilla</item>
+        <item>Chittagong</item>
+    </string-array>
+
+    <string-array name="array_default_districts">
+        <item>Select Your District</item>
+    </string-array>
+
+    <string-array name="array_andhra_pradesh_districts">
+        <item>Select Your District</item>
+        <item>Anantapur</item><item>Chittoor</item><item>East Godavari</item><item>Guntur</item><item>Kadapa</item><item>Krishna</item>
+        <item>Kurnool</item><item>Nellore</item><item>Prakasam</item><item>Srikakulam</item><item>Visakhapatnam</item><item>Vizianagaram</item><item>West Godavari</item>
+    </string-array>
+
+</resources>
