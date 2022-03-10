@@ -3,7 +3,7 @@
     <string name="district">District*</string>
     <string name="thana">Thana*</string>
     <string name="submit">Submit</string>
-    <string name="title_desc">Learning Multiple Spinners (Populating Second Spinner based on the Selection of First Spinner)
+    <string name="title_desc">Mobile Application Developement
     </string>
 
     <string-array name="array_district">
@@ -14,14 +14,31 @@
         <item>Chittagong</item>
     </string-array>
 
-    <string-array name="array_default_districts">
-        <item>Select Your District</item>
+    <string-array name="array_default_thana">
+        <item>Select Your Thana</item>
     </string-array>
 
-    <string-array name="array_andhra_pradesh_districts">
-        <item>Select Your District</item>
-        <item>Anantapur</item><item>Chittoor</item><item>East Godavari</item><item>Guntur</item><item>Kadapa</item><item>Krishna</item>
-        <item>Kurnool</item><item>Nellore</item><item>Prakasam</item><item>Srikakulam</item><item>Visakhapatnam</item><item>Vizianagaram</item><item>West Godavari</item>
+    <string-array name="array_chandpur_thana">
+        <item>Select Your Thana</item>
+        <item>Hajigonj</item>
+        <item>Chandpur</item>
+        <item>Matlab</item>
+        <item>Kachua</item>
     </string-array>
+
+    <string-array name="array_dhaka_thana">
+        <item>Select Your Thana</item>
+        <item>Dhaka</item><item>Savar</item><item>Dohar</item>
+    </string-array>
+
+    <string-array name="array_comilla_thana">
+        <item>Select Your Thana</item>
+        <item>Comilla</item>
+        <item>Feni</item>
+        <item>Chandina</item>
+        <item>ChoddoGram</item>
+    </string-array>
+
+
 
 </resources>

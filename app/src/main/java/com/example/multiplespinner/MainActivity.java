@@ -36,8 +36,35 @@ public class MainActivity extends AppCompatActivity {
         //When any item of the districtSpinner uis selected
             districtSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
-                public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                public void onItemSelected(AdapterView<?> parent, View view, int i, long l) {
+                 thanaSpinner =findViewById(R.id.spinner_thana);
 
+                 selectDistrict = districtSpinner.getSelectedItem().toString();
+
+
+                    int parentID = parent.getId();
+                    if (parentID == R.id.spinner_district){
+                        switch (selectDistrict) {
+                            case "Select Your district" : thanaAdapter =ArrayAdapter.createFromResource(parent.getContext(),
+                                  R.array.array_default_thana, R.layout.spinner_layout );
+                            break;
+
+                            case "Dhaka" : thanaAdapter =ArrayAdapter.createFromResource(parent.getContext(),
+                                    R.array.array_dhaka_thana, R.layout.spinner_layout );
+                                break;
+                            case "Chandpur" : thanaAdapter =ArrayAdapter.createFromResource(parent.getContext(),
+                                    R.array.array_chandpur_thana, R.layout.spinner_layout );
+                            break;
+                            case "Comilla" : thanaAdapter =ArrayAdapter.createFromResource(parent.getContext(),
+                                    R.array.array_comilla_thana, R.layout.spinner_layout );
+                                break;
+                            default: break;
+
+                        }
+                        thanaAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                        thanaSpinner.setAdapter(thanaAdapter);
+
+                    }
                 }
 
                 @Override
